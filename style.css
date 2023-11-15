@@ -1,8 +1,18 @@
-.container{
-    height: 800px;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap');
+:root{
+    --primaria: #5681a6;
+    --secundaria: #7EA1BF;
+    --secundaria-clara: #BFBFBF;
+    --terciaria: #F2F2F2;
+    --black: #0D0D0D;
 }
+
+.navbar, .nav-link, .nav-brand{
+    background-color: var(--terciaria) !important;
+    color: var(--black) !important;
+}
+
+body{
+    background-color: #5681a6;
+}
+
