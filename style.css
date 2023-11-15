@@ -10,6 +10,19 @@
 .navbar, .nav-link, .nav-brand{
     background-color: var(--terciaria) !important;
     color: var(--black) !important;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.icon-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    padding: auto;
+}
+
+.icon-nav:last-child{
+    margin-right: 0;
 }
 
 body{
