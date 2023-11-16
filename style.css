@@ -52,7 +52,7 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-image: url('./images/Rectangle 2.jpg');
+    background-image: url('https://images.pexels.com/photos/12207950/pexels-photo-12207950.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
     background-size: cover;
     padding: 75px;
     text-align: center;
