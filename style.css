@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Roboto:wght@300;400;500;700;900&display=swap');
 :root{
-    --primaria: #5681a6;
-    --secundaria: #7EA1BF;
+    --primaria: #001932;
+    --secundaria: #5981AA;
     --secundaria-clara: #BFBFBF;
     --terciaria: #F2F2F2;
     --black: #0D0D0D;
@@ -52,7 +52,7 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    background-image: url('https://images.pexels.com/photos/12207950/pexels-photo-12207950.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-image: url('images/Rectangle-2.webp');
     background-size: cover;
     padding: 75px;
     text-align: center;
