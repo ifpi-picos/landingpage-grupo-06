@@ -7,6 +7,10 @@
     --black: #0D0D0D;
 }
 
+body{
+    background-color: #5681a6;
+}
+
 .navbar, .nav-link, .nav-brand{
     background-color: var(--terciaria) !important;
     color: var(--black) !important;
@@ -23,10 +27,6 @@
 
 .icon-nav:last-child{
     margin-right: 0;
-}
-
-body{
-    background-color: #5681a6;
 }
 
 .gradient-text {
@@ -108,7 +108,17 @@ main {
 .section-footer{
     background-color: #00143c;
     color: #fff;
-    max-height: 300px;
+    width: 100%;
+
+}
+
+.teste-height{
+    height: 300px;
+}
+
+.logo-name-institute {
+    height: 100%;
+    width: 50%;
 }
 
 .logo-name-institute p {
@@ -119,26 +129,45 @@ main {
 
 .address-institute{
     padding-left: 10px;
-    font-size: 20px;
+    padding-right: 10px;
+    height: 100%;
+    width: 50%;
 }
 
 .address-institute span{
     font-weight: bold;
+    font-size: 20px;
+}
+
+.institution {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .institution .img-logo img{
     width: 150px;
 }
 
+.contacts{
+    margin-bottom: 0 !important;
+}
+
 .contacts a{
     text-decoration: none;
     font-size: 20px;
+    color: #FFFFFF;
 }
 
 .contacts i{
     padding-left: 10px;
 }
 
+.horizontal-divider-gradiente{
+    width: 100%;
+    height: 2px;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, grey, white 400px, grey 8000px);;
+}
 
 /*Responsividade para celulares*/
 @media (max-width: 767px) {
