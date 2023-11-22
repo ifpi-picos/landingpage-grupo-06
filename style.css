@@ -12,7 +12,7 @@ body{
 }
 
 .navbar, .nav-link, .nav-brand{
-    background-color: var(--terciaria) !important;
+    background-color: transparent !important;
     color: var(--black) !important;
     font-family: 'Orbitron', sans-serif;
 }
