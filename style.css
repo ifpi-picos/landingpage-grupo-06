@@ -9,6 +9,7 @@
 
 body {
     color: #FFFFFF;
+    background-color: #00143c;
 }
 
 .navbar,
@@ -44,7 +45,6 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #00143c;
 }
 
 .presentation {
@@ -132,10 +132,8 @@ main {
 /* Inicio da estilização da seção footer */
 
 .section-footer {
-    background-color: #00143c;
     color: #fff;
     width: 100%;
- 
 }
 
 .logo-name-institute {
