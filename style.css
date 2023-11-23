@@ -11,6 +11,11 @@
 body {
     color: #FFFFFF;
     background-color: #001932;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Orbitron', sans-serif;
 }
 
 /* Header */
@@ -170,12 +175,11 @@ main {
     width: 100%;
 }
 
-.logo-name-institute {
-    height: 100%;
-    width: 50%;
+.logo-institute {
+    width: 30%;
 }
 
-.logo-name-institute p {
+.logo-institute p {
     margin: 0;
     padding: 0;
     font-size: 20px;
@@ -185,7 +189,7 @@ main {
     padding-left: 10px;
     padding-right: 10px;
     height: 100%;
-    width: 50%;
+    width: 70%;
 }
 
 .address-institute span {
@@ -206,14 +210,46 @@ main {
     margin-bottom: 0 !important;
 }
 
+.contacts span {
+    font-size: 20px;
+}
+
 .contacts a {
     text-decoration: none;
-    font-size: 20px;
     color: #FFFFFF;
+}
+
+.contacts a:hover{
+    color: rgb(255, 255, 255, 0.5);
+}
+
+.copyright a{
+    color: #FFFFFF;
+}
+
+.copyright a:hover{
+    color: rgb(255, 255, 255, 0.5);
 }
 
 .contacts i {
     padding-left: 10px;
+    padding-right: 10px;
+}
+
+.br-red {
+    border: 1px solid red;
+}
+
+.br-green {
+    border: 1px solid green;
+}
+
+.br-yellow {
+    border: 1px solid yellow;
+}
+
+.br-white {
+    border: 1px solid white;
 }
 
 /* Fim da estilização da seção footer */

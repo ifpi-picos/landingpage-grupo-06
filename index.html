@@ -67,9 +67,11 @@
                 <div class="row">
                     <div class="col-md-12">
                         <p class="description-text gradient-text">
-                            Bem-vindo ao incrível projeto do Grupo de Observação Astronômica Hawking do IFPI/Campus Picos!
+                            Bem-vindo ao incrível projeto do Grupo de Observação Astronômica Hawking do IFPI/Campus
+                            Picos!
                             Aqui, mergulhamos no fascinante mundo da Astronomia, promovendo atividades emocionantes para
-                            todos, desde observações astronômicas até debates envolventes. Vamos explorar juntos o universo
+                            todos, desde observações astronômicas até debates envolventes. Vamos explorar juntos o
+                            universo
                             e compartilhar o conhecimento científico de forma empolgante!
                         </p>
                     </div>
@@ -117,8 +119,7 @@
                 </div>
                 <div class="row methodology">
                     <div class="col-md-5">
-                        <img src="images/methodology.png"
-                            alt="imagens de uma parte do espaço em diferente fitros">
+                        <img src="images/methodology.png" alt="imagens de uma parte do espaço em diferente fitros">
                     </div>
                     <div class="col-md-7 my-auto">
                         <h2>Metodologia</h2>
@@ -150,36 +151,40 @@
         <div class="container">
             <div class="horizontal-divider-gradiente mb-4"></div>
             <div class="row">
-                <div class="col-md-6 institution my-auto">
-                    <div class="d-flex align-items-end">
-                        <div class="logo-name-institute text-center">
+                <div class="col-md-8 institution">
+                    <div class="d-flex ">
+                        <div class="logo-institute text-center my-auto">
                             <a class="img-logo" href="https://www.ifpi.edu.br/picos" target="_blank"><img
                                     src="https://pbs.twimg.com/profile_images/438771627854024704/Az4OY07a_400x400.png"
                                     alt="logo do Instituto Federal do Piauí"></a>
-                            <p>Instituto Federal do Piauí</p>
-                            <p>IFPI</p>
-                            <p>Campus Picos</p>
                         </div>
                         <div class="address-institute">
-                            <p class="address"><span>Endereço:</span> Av Pedro Marques de Medeiros, s/n - Parque
+                            <h3>Instituto Federal do Piauí - IFPI - Campus Picos</h3>
+                            <p class="address">Av Pedro Marques de Medeiros, s/n - Parque
                                 Industrial, Picos - PI, 64605-500</p>
-                            <p class="contact"><span>Telefone:</span> (89) 3415-0901</p>
+                            <p class="contact">(89) 3415-0901</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 contacts my-auto">
-                    <div class="d-flex justify-content-end">
-                        <a href="https://instagram.com/g.o.hawking?igshid=YTQwZjQ0NmI0OA=="><span>g.o.hawking</span></a>
-                        <a href=""><i class="fa-brands fa-instagram fa-2x"></i></a>
-                    </div>
-                    <div class="d-flex justify-content-end align-content-end">
-                        <a href=""><span>goh.ifpi.picos@gmail.com</span></a>
-                        <a href=""><i class="fa fa-envelope-o fa-2x"></i></a>
+                <div class="col-md-4 contacts my-auto">
+                    <a href="https://instagram.com/g.o.hawking?igshid=YTQwZjQ0NmI0OA==" target="_blank">
+                        <div class="d-flex justify-content-md-end justify-content-sm-start ">
+                            <div class="d-flex flex-md-row flex-sm-row-reverse">
+                                <span>g.o.hawking</span>
+                                <i class="fa-brands fa-instagram fa-2x"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="d-flex justify-content-md-end justify-content-sm-start">
+                        <div class="d-flex flex-md-row flex-sm-row-reverse">
+                            <span>goh.ifpi.picos@gmail.com</span>
+                            <i class="fa fa-envelope-o fa-2x"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="mt-5 mb-3 text-center">
-                <a class="text-reset text-decoration-none link-opacity-50-hover fs-5" target="_blank"
+            <div class="mt-5 mb-3 copyright text-center">
+                <a class="text-decoration-none fs-5" target="_blank"
                     href="https://github.com/ifpi-picos/landingpage-grupo-06"><span>&copy; 2023 Todos os direitos
                         reservados. Grupo 06, Projeto Mambee
                         Bootcamp.</span></a>
@@ -193,24 +198,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" 
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" 
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script>
-        window.addEventListener("scroll", function(){
+        window.addEventListener("scroll", function () {
             let navbar = document.querySelector('.navbar');
-        let iconnav = document.querySelectorAll('.icon-nav i');
-        let navlink = document.querySelectorAll('.nav-link');
+            let iconnav = document.querySelectorAll('.icon-nav i');
+            let navlink = document.querySelectorAll('.nav-link');
 
-        if (window.scrollY < 100) {
-            navbar.style.setProperty('background-color', 'transparent', 'important');
-            iconnav.forEach(element => element.style.setProperty('color', 'var(--secundaria)', 'important'));
-            navlink.forEach(element => element.style.setProperty('color', 'var(--secundaria)', 'important'));
-        } else {
-            navbar.style.setProperty('background-color', 'var(--secundaria)', 'important');
-            iconnav.forEach(element => element.style.setProperty('color', 'var(--secundaria-clara)', 'important'));
-            navlink.forEach(element => element.style.setProperty('color', 'var(--secundaria-clara)', 'important'));
-        }
+            if (window.scrollY < 100) {
+                navbar.style.setProperty('background-color', 'transparent', 'important');
+                iconnav.forEach(element => element.style.setProperty('color', 'var(--secundaria)', 'important'));
+                navlink.forEach(element => element.style.setProperty('color', 'var(--secundaria)', 'important'));
+            } else {
+                navbar.style.setProperty('background-color', 'var(--secundaria)', 'important');
+                iconnav.forEach(element => element.style.setProperty('color', 'var(--secundaria-clara)', 'important'));
+                navlink.forEach(element => element.style.setProperty('color', 'var(--secundaria-clara)', 'important'));
+            }
         })
     </script>
 </body>
