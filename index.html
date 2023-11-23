@@ -19,7 +19,7 @@
 
 <body>
     <header id="header">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
             <div class="container">
                 <div class="container">
                     <a class="navbar-brand" href="#">
@@ -60,7 +60,7 @@
     </header>
     <main>
         <section class="presentation">
-            <div class="title">
+            <div class="title mt-4">
                 <h1 class="gradient-text">Grupo de observação Astronômica Hawking</h1>
             </div>
             <div class="description mt-4">
@@ -198,8 +198,19 @@
         crossorigin="anonymous"></script>
     <script>
         window.addEventListener("scroll", function(){
-            let header = document.querySelector('#header')
-            header.classList.toggle('fixed-top',window.scrollY >0)
+            let navbar = document.querySelector('.navbar');
+        let iconnav = document.querySelectorAll('.icon-nav i');
+        let navlink = document.querySelectorAll('.nav-link');
+
+        if (window.scrollY < 100) {
+            navbar.style.setProperty('background-color', 'transparent', 'important');
+            iconnav.forEach(element => element.style.setProperty('color', 'var(--secundaria)', 'important'));
+            navlink.forEach(element => element.style.setProperty('color', 'var(--secundaria)', 'important'));
+        } else {
+            navbar.style.setProperty('background-color', 'var(--secundaria)', 'important');
+            iconnav.forEach(element => element.style.setProperty('color', 'var(--secundaria-clara)', 'important'));
+            navlink.forEach(element => element.style.setProperty('color', 'var(--secundaria-clara)', 'important'));
+        }
         })
     </script>
 </body>
