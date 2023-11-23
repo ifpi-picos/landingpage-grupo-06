@@ -13,12 +13,20 @@ body {
     background-color: #001932;
 }
 
+/* Header */
+.icon-nav,
 .navbar,
 .nav-link,
 .nav-brand {
     background-color: transparent !important;
-    color: var(--black) !important;
+    color: var(--secundaria) !important;
     font-family: 'Orbitron', sans-serif;
+}
+
+.icon-nav:hover,
+.nav-link:hover {
+    color: var(--secundaria-clara) !important;
+    transition: 0.3s;
 }
 
 .icon-nav {
@@ -32,6 +40,8 @@ body {
 .icon-nav:last-child {
     margin-right: 0;
 }
+
+/* Main */
 
 .gradient-text {
     background: linear-gradient(180deg, #FFFFFF, #5981AA);
