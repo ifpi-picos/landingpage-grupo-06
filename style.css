@@ -15,7 +15,6 @@ body {
 
 /* Header */
 
-
 .icon-nav,
 .navbar,
 .nav-link,
@@ -43,6 +42,10 @@ body {
     margin-right: 0;
 }
 
+.fixed-top{
+    background-color: var(--primaria);
+}
+
 /* Main */
 
 .gradient-text {
@@ -58,6 +61,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 0px;
 }
 
 .presentation {
