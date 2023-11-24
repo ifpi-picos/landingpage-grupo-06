@@ -71,15 +71,19 @@ main {
     margin-top: 0px;
 }
 
-.presentation {
+.paralax {
     position: relative;
-    height: auto;
-    width: 100%;
+    height: 100%;
     opacity: 0.8;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+.presentation {
+    height: auto;
+    width: 100%;
     background-image: url('images/Rectangle-2.webp');
 }
 
@@ -181,6 +185,33 @@ main {
 /* Fim da estilização da seção sobre nos */
 
 
+/* Inicio da estilização da seção de arquivos externos */
+
+.external-files  {
+    height: auto;
+    width: 100%;
+    background-image: url('images/pexels-snapwire-32237.webp');
+}
+
+.content-external-files {
+    background-color: #001932;
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.content-links{
+    background-color: #5581A6;
+    margin: 10px;
+}
+
+.item-external a:hover {
+   opacity: 0.5;
+}
+
+
+/* Inicio da estilização da seção de arquivos externos */
+
 
 /* Inicio da estilização da seção footer */
 
@@ -265,7 +296,7 @@ main {
         line-height: 30px;
     }
 
-    .about-us img{
+    .about-us img {
         margin-bottom: 50px;
     }
 }
@@ -279,7 +310,7 @@ main {
     .institution .img-logo img {
         width: 150px;
     }
-       
+
     .address-institute {
         padding-left: 20px;
         width: 100%;
