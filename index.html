@@ -27,7 +27,7 @@
                     </a>
                 </div>
 
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse col-md-8" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <div class="icon-nav">
                             <i class="fa-solid fa-house"></i>
@@ -44,8 +44,8 @@
                         <!-- <div class="icon-nav">
                             <i class="fa-solid fa-calendar"></i>
                             <a class="nav-link" href="#">Calendário</a>
-                        </div>
-                        <div class="icon-nav">
+                        </div> -->
+                        <!-- <div class="icon-nav">
                             <i class="fa-solid fa-handshake"></i>
                             <a class="nav-link" href="#">Parceiros</a>
                         </div> -->
@@ -209,6 +209,14 @@
             let navbar = document.querySelector('.navbar');
             let iconnav = document.querySelectorAll('.icon-nav i');
             let navlink = document.querySelectorAll('.nav-link');
+            if(window.scrollY == 0){
+                iconnav.forEach(element => element.parentElement.style.margin='20px')
+            }else{
+                iconnav.forEach(element =>{
+                    element.parentElement.style.margin='0';
+                    element.parentElement.style.marginLeft = '20%';
+                });
+            }
 
             if (window.scrollY < 100) {
                 navbar.style.setProperty('background-color', 'transparent', 'important');
