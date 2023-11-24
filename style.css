@@ -24,42 +24,19 @@ h4 {
 
 /* Header */
 
-.icon-nav,
 .navbar,
 .nav-link,
 .nav-brand {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     background-color: transparent !important;
-    color: var(--secundaria) !important;
     font-family: 'Orbitron', sans-serif;
     transition: 1s;   
 }
 
-.icon-nav:hover{
-    color: var(--secundaria-clara) !important;
-    padding: 10px; /* Aumenta o tamanho do elemento ajustando o padding */
-    transition: 0.3s;
-}
 .nav-link:hover {
-    color: var(--secundaria-clara) !important;
+    color: var(--terciaria) !important;
     border-bottom: 2px solid red;
-    padding: 10px; /* Aumenta o tamanho do elemento ajustando o padding */
+    padding: 10px;
     transition: 0.3s;
-}
-
-.icon-nav {
-    display: flex;
-    align-items: center;
-    flex: auto;
-    padding: auto;
-    margin-left: 20%;
-}
-
-
-.icon-nav:last-child {
-    margin-right: 0;
 }
 
 

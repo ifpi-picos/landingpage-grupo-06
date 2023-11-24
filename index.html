@@ -26,34 +26,49 @@
                         <img src="images/logo_goh.png" alt="Bootstrap" width="40" height="40">
                     </a>
                 </div>
-
-                <div class="collapse navbar-collapse col-md-8" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <div class="icon-nav">
-                            <i class="fa-solid fa-house"></i>
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </div>
-                        <!-- <div class="icon-nav">
-                            <i class="fa-solid fa-satellite"></i>
-                            <a class="nav-link" href="#"></i>Atividades</a>
-                        </div> -->
-                        <div class="icon-nav">
-                            <i class="fa-solid fa-newspaper"></i>
-                            <a class="nav-link" href="#about-us">Sobre</a>
-                        </div>
-                        <!-- <div class="icon-nav">
-                            <i class="fa-solid fa-calendar"></i>
-                            <a class="nav-link" href="#">Calendário</a>
-                        </div> -->
-                        <!-- <div class="icon-nav">
-                            <i class="fa-solid fa-handshake"></i>
-                            <a class="nav-link" href="#">Parceiros</a>
-                        </div> -->
-                        <div class="icon-nav">
-                            <i class="fa-solid fa-phone"></i>
-                            <a class="nav-link" href="#section-contacts">Contatos</a>
-                        </div>
-                    </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse col-md-8 justify-content-around" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                    <i class="fa-solid fa-house"></i>
+                                    Home
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-satellite"></i>
+                                Atividades
+                            </a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about-us">
+                                    <i class="fa-solid fa-newspaper"></i>
+                                    Sobre
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-calendar"></i>
+                                Calendário
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-handshake"></i>
+                                Parceiros
+                            </a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#section-contacts">
+                                    <i class="fa-solid fa-phone"></i>
+                                    Contatos
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
@@ -237,31 +252,43 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Responsividade da navBar     -->
     <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let iconnav = document.querySelectorAll('.nav-item');
+            let navlink = document.querySelectorAll('.nav-link');
+            iconnav.forEach(element => {
+                element.classList.add('m-4');
+            });
+            navlink.forEach(element => element.style.setProperty('color', 'var(--secundaria)' ));
+        });
         window.addEventListener("scroll", function () {
             let navbar = document.querySelector('.navbar');
-            let iconnav = document.querySelectorAll('.icon-nav i');
+            let iconnav = document.querySelectorAll('.nav-item');
             let navlink = document.querySelectorAll('.nav-link');
-            if(window.scrollY == 0){
-                iconnav.forEach(element => element.parentElement.style.margin='20px')
-            }else{
-                iconnav.forEach(element =>{
-                    element.parentElement.style.margin='0';
-                    element.parentElement.style.marginLeft = '20%';
+            if (window.scrollY === 0) {
+            iconnav.forEach(element => {
+                element.classList.remove('mx-1');
+                element.classList.add('m-4');
+            });
+            } else {
+                iconnav.forEach(element => {
+                    element.classList.remove('m-4');
+                    element.classList.add('mx-1');
                 });
-            }
 
+            }
             if (window.scrollY < 100) {
                 navbar.style.setProperty('background-color', 'transparent', 'important');
-                iconnav.forEach(element => element.style.setProperty('color', 'var(--secundaria)', 'important'));
-                navlink.forEach(element => element.style.setProperty('color', 'var(--secundaria)', 'important'));
+                iconnav.forEach(element => element.style.setProperty('color', 'var(--secundaria)'));
+                navlink.forEach(element => element.style.setProperty('color', 'var(--secundaria)' ));
             } else {
                 navbar.style.setProperty('background-color', 'var(--secundaria)', 'important');
-                iconnav.forEach(element => element.style.setProperty('color', 'var(--secundaria-clara)', 'important'));
-                navlink.forEach(element => element.style.setProperty('color', 'var(--secundaria-clara)', 'important'));
+                iconnav.forEach(element => element.style.setProperty('color', 'var(--secundaria-clara)'));
+                navlink.forEach(element => element.style.setProperty('color', 'var(--secundaria-clara)'));
             }
         })
-    </script>
+</script>
 </body>
 
 </html>
