@@ -12,6 +12,7 @@ body {
     color: #FFFFFF;
     background-color: #001932;
     font-family: 'Roboto', sans-serif;
+    min-width: 360px;
 }
 
 h1,
@@ -249,22 +250,6 @@ main {
     padding-right: 10px;
 }
 
-.br-red {
-    border: 1px solid red;
-}
-
-.br-green {
-    border: 1px solid green;
-}
-
-.br-yellow {
-    border: 1px solid yellow;
-}
-
-.br-white {
-    border: 1px solid white;
-}
-
 /* Fim da estilização da seção footer */
 
 .horizontal-divider-gradiente {
@@ -278,5 +263,25 @@ main {
     .description-text {
         font-size: 20px;
         line-height: 30px;
+    }
+
+    .about-us img{
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-institute {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+
+    .institution .img-logo img {
+        width: 150px;
+    }
+       
+    .address-institute {
+        padding-left: 20px;
+        width: 100%;
     }
 }
