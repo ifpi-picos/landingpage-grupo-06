@@ -27,7 +27,6 @@ h4 {
 .navbar,
 .nav-link,
 .nav-brand {
-    background-color: transparent !important;
     font-family: 'Orbitron', sans-serif;
     transition: 1s;   
 }
@@ -39,6 +38,24 @@ h4 {
     transition: 0.3s;
 }
 
+.nav-link:active {
+    color: var(--terciaria) !important;
+    border-bottom: 2px solid red;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.navbar-toggler:focus {
+    outline: 0;
+    box-shadow: none;
+    text-decoration: none;
+}
+
+.bi-list {
+    color: var(--terciaria) !important;
+    height: 30px;
+    width: 30px;
+}
 
 /* Main */
 
@@ -55,7 +72,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 0px;
+    margin-top: 0;
 }
 
 .paralax {
@@ -136,37 +153,50 @@ main {
 .about-us {
     margin-top: 50px;
     margin-bottom: 50px;
-    padding: 14px;
+    padding: 40px;
+    border-radius: 15px;
 }
 
+/* Estilo das imagens */
 .about-us img {
-    object-fit: contain;
-    height: 100%;
-    width: 100%;
-    max-width: 400px;
+    object-fit: cover;
+    max-width: 85%;
+    box-shadow: 0 0 15px 5px rgba(77, 206, 255, 0.5);
+    border-radius: 10px; /* Cantos arredondados */
+    transition: transform 0.3s ease-in-out; /* Efeito de transição */
+    padding: 10px;
 }
 
+/* Efeito de hover nas imagens */
+.about-us img:hover {
+    transform: scale(1.05); /* Aumentar ligeiramente a imagem */
+}
+
+/* Estilo dos títulos */
 .about-us h2 {
-    font-size: 26px;
+    font-size: 36px; /* Aumentando o tamanho do título */
+    font-family: 'Montserrat', sans-serif; /* Exemplo de fonte futurista */
+    font-weight: 700; /* Ajustando o peso da fonte para mais destaque */
+    color: #ffffff; /* Cor do texto */
+    margin-bottom: 25px; /* Mais espaçamento abaixo dos títulos */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Sombra para destacar o texto */
 }
 
+/* Estilo dos parágrafos */
 .about-us p {
-    font-size: 18px;
+    font-size: 20px; /* Aumentando um pouco o tamanho do parágrafo */
+    line-height: 1.8; /* Aumentando o espaçamento entre linhas */
+    color: #dddddd; /* Cor do texto */
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3); /* Sombra mais sutil para o texto */
 }
 
-.objective {
-    margin-top: 40px;
-    margin-bottom: 300px;
-}
 
-.justification {
-    margin-top: 300px;
-    margin-bottom: 300px;
-}
-
+/* Estilização das seções individuais */
+.objective,
+.justification,
 .methodology {
-    margin-top: 300px;
-    margin-bottom: 40px;
+    margin-top: 100px; /* Espaçamento entre as seções */
+    margin-bottom: 100px; /* Espaçamento entre as seções */
 }
 
 /* Fim da estilização da seção sobre nos */
