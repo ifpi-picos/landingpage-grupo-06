@@ -28,25 +28,35 @@ h4 {
 .navbar,
 .nav-link,
 .nav-brand {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-color: transparent !important;
     color: var(--secundaria) !important;
     font-family: 'Orbitron', sans-serif;
-    transition: 1s;
+    transition: 1s;   
 }
 
-.icon-nav:hover,
+.icon-nav:hover{
+    color: var(--secundaria-clara) !important;
+    padding: 10px; /* Aumenta o tamanho do elemento ajustando o padding */
+    transition: 0.3s;
+}
 .nav-link:hover {
-    color: var(--terciaria) !important;
+    color: var(--secundaria-clara) !important;
+    border-bottom: 2px solid red;
+    padding: 10px; /* Aumenta o tamanho do elemento ajustando o padding */
     transition: 0.3s;
 }
 
 .icon-nav {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-right: 10px;
+    flex: auto;
     padding: auto;
+    margin-left: 20%;
 }
+
 
 .icon-nav:last-child {
     margin-right: 0;
