@@ -222,12 +222,17 @@ main {
     margin: 10px;
 }
 
-.item-external a:hover {
-   opacity: 0.5;
+.item-external{
+    object-fit: cover;
+    transition: transform 0.5s ease;
 }
 
+.item-external i:hover {
+    transform: scale(1.5);
+    color: var(--black) !important;
+}
 
-/* Inicio da estilização da seção de arquivos externos */
+/* Fim da estilização da seção de arquivos externos */
 
 
 /* Inicio da estilização da seção footer */
