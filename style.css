@@ -209,11 +209,15 @@ main {
 
 .item-external{
     object-fit: cover;
-    transition: transform 0.5s ease;
+    transition: transform 0.3s ease-in-out;
+}
+
+.item-external i {
+   transition: transform 0.3s ease-in-out;
 }
 
 .item-external i:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
     color: var(--secundaria-clara) !important;
 }
 
