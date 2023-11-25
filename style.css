@@ -98,7 +98,7 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 75px;
+    padding: 75px 20px;
     text-align: center;
 }
 
