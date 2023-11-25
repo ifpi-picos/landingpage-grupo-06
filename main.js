@@ -32,10 +32,13 @@ window.addEventListener("scroll", function () {
     let iconnav = document.querySelectorAll('.nav-item');
     let navlink = document.querySelectorAll('.nav-link');
 
+    
     if (window.scrollY === 0) {
         iconnav.forEach(element => {
-            element.classList.remove('mx-1');
-            element.classList.add('m-4');
+            //element.classList.remove('mx-1');
+            //element.classList.add('m-4');
+            element.classList.remove('m-4');
+            element.classList.add('mx-1');
         });
     } else {
         iconnav.forEach(element => {
