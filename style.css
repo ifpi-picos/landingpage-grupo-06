@@ -146,8 +146,9 @@ main {
 .about-us {
     margin-top: 50px;
     margin-bottom: 50px;
-    padding: 40px;
+    padding: 40px ;
     border-radius: 15px;
+    padding-top: 80px;
 }
 
 /* Estilo das imagens */
