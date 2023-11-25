@@ -204,13 +204,13 @@ main {
 
 /* Inicio da estilização da seção de arquivos externos */
 
-.external-files  {
+.see-also {
     height: auto;
     width: 100%;
     background-image: url('images/pexels-snapwire-32237.webp');
 }
 
-.content-external-files {
+.see-also-files {
     background-color: #001932;
     width: 100%;
     margin-top: 100px;
