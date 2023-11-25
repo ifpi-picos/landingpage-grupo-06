@@ -9,8 +9,8 @@
 }
 
 body {
-    color: #FFFFFF;
-    background-color: #001932;
+    color: var(--terciaria);
+    background-color: var(--primaria);
     font-family: 'Roboto', sans-serif;
     min-width: 360px;
 }
@@ -32,15 +32,15 @@ h4 {
 }
 
 .nav-link:hover {
-    color: var(--terciaria) !important;
-    border-bottom: 2px solid red;
+    color: var(--secundaria-clara) !important;
+    border-bottom: 2px solid var(--secundaria-clara);
     padding: 10px;
     transition: 0.3s;
 }
 
 .nav-link:active {
-    color: var(--terciaria) !important;
-    border-bottom: 2px solid red;
+    color: var(--secundaria-clara) !important;
+    border-bottom: 2px solid var(--secundaria-clara);
     padding: 10px;
     transition: 0.3s;
 }
@@ -103,7 +103,7 @@ main {
 }
 
 .title h1 {
-    color: white;
+    color: var(--terciaria);
     font-size: 3rem;
     font-family: Orbitron, sans-serif;
     font-weight: 600;
@@ -116,12 +116,12 @@ main {
     width: 100%;
     align-items: center;
     justify-content: center;
-    color: #FFFFFF;
+    color: var(--terciaria);
     margin-bottom: 5rem;
 }
 
 .description-text {
-    color: white;
+    color: var(--terciaria);
     font-size: 25px;
     font-family: Roboto, sans-serif;
     font-weight: 600;
@@ -162,7 +162,7 @@ main {
     font-size: 36px; /* Aumentando o tamanho do título */
     font-family: 'Montserrat', sans-serif; /* Exemplo de fonte futurista */
     font-weight: 700; /* Ajustando o peso da fonte para mais destaque */
-    color: #ffffff; /* Cor do texto */
+    color: var(--terciaria); /* Cor do texto */
     margin-bottom: 25px; /* Mais espaçamento abaixo dos títulos */
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Sombra para destacar o texto */
 }
@@ -171,7 +171,7 @@ main {
 .about-us p {
     font-size: 20px; /* Aumentando um pouco o tamanho do parágrafo */
     line-height: 1.8; /* Aumentando o espaçamento entre linhas */
-    color: #dddddd; /* Cor do texto */
+    color: var(--terciaria); /* Cor do texto */
     text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3); /* Sombra mais sutil para o texto */
 }
 
@@ -196,14 +196,14 @@ main {
 }
 
 .see-also-files {
-    background-color: #001932;
+    background-color: var(--primaria);
     width: 100%;
     margin-top: 100px;
     margin-bottom: 100px;
 }
 
 .content-links{
-    background-color: #5581A6;
+    background-color: var(--secundaria);
     margin: 10px;
 }
 
@@ -214,7 +214,7 @@ main {
 
 .item-external i:hover {
     transform: scale(1.5);
-    color: var(--black) !important;
+    color: var(--secundaria-clara) !important;
 }
 
 /* Fim da estilização da seção de arquivos externos */
@@ -223,7 +223,7 @@ main {
 /* Inicio da estilização da seção footer */
 
 .section-footer {
-    color: #fff;
+    color: var(--terciaria);
     width: 100%;
 }
 
@@ -268,19 +268,19 @@ main {
 
 .contacts a {
     text-decoration: none;
-    color: #FFFFFF;
+    color: var(--terciaria);
 }
 
 .contacts a:hover {
-    color: rgb(255, 255, 255, 0.5);
+    color: var(--secundaria-clara);
 }
 
 .copyright a {
-    color: #FFFFFF;
+    color: var(--terciaria);
 }
 
 .copyright a:hover {
-    color: rgb(255, 255, 255, 0.5);
+    color: var(--secundaria-clara);
 }
 
 .contacts i {
