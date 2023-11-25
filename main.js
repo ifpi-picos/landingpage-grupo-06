@@ -30,11 +30,9 @@ document.addEventListener("DOMContentLoaded", function () {
     iconnav.forEach((item) => {
         item.addEventListener('click', function () {
             navbarCollapse.classList.toggle('show');
-            if(state.menu == true){
-                state.menu = false;
-                if (window.scrollY < 100) {
-                    setTransparentMenu();
-                }
+            state.menu = false;
+            if (window.scrollY < 100) {
+                setTransparentMenu();
             }
         });
     })

@@ -31,6 +31,14 @@ h4 {
     transition: 1s;   
 }
 
+.navbar {
+    background-color: transparent !important;
+}
+
+.nav-item, .nav-link {
+    color: var(--secundaria);
+}
+
 .nav-link:hover {
     color: var(--secundaria-clara) !important;
     border-bottom: 2px solid var(--secundaria-clara);
