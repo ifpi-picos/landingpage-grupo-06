@@ -28,14 +28,15 @@ h4 {
 .nav-link,
 .nav-brand {
     font-family: 'Orbitron', sans-serif;
-    transition: 1s;   
+    transition: 1s;
 }
 
 .navbar {
     background-color: transparent !important;
 }
 
-.nav-item, .nav-link {
+.nav-item,
+.nav-link {
     color: var(--secundaria);
 }
 
@@ -146,7 +147,7 @@ main {
 .about-us {
     margin-top: 50px;
     margin-bottom: 50px;
-    padding: 40px ;
+    padding: 40px;
     border-radius: 15px;
     padding-top: 80px;
 }
@@ -156,41 +157,68 @@ main {
     object-fit: cover;
     max-width: 85%;
     box-shadow: 0 0 15px 5px rgba(77, 206, 255, 0.5);
-    border-radius: 10px; /* Cantos arredondados */
-    transition: transform 0.3s ease-in-out; /* Efeito de transição */
+    border-radius: 10px;
+    /* Cantos arredondados */
+    transition: transform 0.3s ease-in-out;
+    /* Efeito de transição */
     padding: 10px;
 }
 
 /* Efeito de hover nas imagens */
 .about-us img:hover {
-    transform: scale(1.05); /* Aumentar ligeiramente a imagem */
+    transform: scale(1.05);
+    /* Aumentar ligeiramente a imagem */
 }
 
 /* Estilo dos títulos */
 .about-us h2 {
-    font-size: 36px; /* Aumentando o tamanho do título */
-    font-family: 'Montserrat', sans-serif; /* Exemplo de fonte futurista */
-    font-weight: 700; /* Ajustando o peso da fonte para mais destaque */
-    color: var(--terciaria); /* Cor do texto */
-    margin-bottom: 25px; /* Mais espaçamento abaixo dos títulos */
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5); /* Sombra para destacar o texto */
+    font-size: 36px;
+    /* Aumentando o tamanho do título */
+    font-family: 'Montserrat', sans-serif;
+    /* Exemplo de fonte futurista */
+    font-weight: 700;
+    /* Ajustando o peso da fonte para mais destaque */
+    color: var(--terciaria);
+    /* Cor do texto */
+    margin-bottom: 25px;
+    /* Mais espaçamento abaixo dos títulos */
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+    /* Sombra para destacar o texto */
 }
 
 /* Estilo dos parágrafos */
 .about-us p {
-    font-size: 20px; /* Aumentando um pouco o tamanho do parágrafo */
-    line-height: 1.8; /* Aumentando o espaçamento entre linhas */
-    color: var(--terciaria); /* Cor do texto */
-    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3); /* Sombra mais sutil para o texto */
+    font-size: 20px;
+    /* Aumentando um pouco o tamanho do parágrafo */
+    line-height: 1.8;
+    /* Aumentando o espaçamento entre linhas */
+    color: var(--terciaria);
+    /* Cor do texto */
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.3);
+    /* Sombra mais sutil para o texto */
 }
 
 
 /* Estilização das seções individuais */
-.objective,
-.justification,
+.objective {
+    margin-top: 100px;
+    /* Espaçamento entre as seções */
+    margin-bottom: 250px;
+    /* Espaçamento entre as seções */
+}
+
+.justification {
+    margin-top: 250px;
+    /* Espaçamento entre as seções */
+    margin-bottom: 250px;
+    /* Espaçamento entre as seções */
+}
+
 .methodology {
-    margin-top: 100px; /* Espaçamento entre as seções */
-    margin-bottom: 100px; /* Espaçamento entre as seções */
+    margin-top: 250px;
+    /* Espaçamento entre as seções */
+    margin-bottom: 100px;
+    /* Espaçamento entre as seções */
 }
 
 /* Fim da estilização da seção sobre nos */
@@ -211,18 +239,18 @@ main {
     margin-bottom: 100px;
 }
 
-.content-links{
+.content-links {
     background-color: var(--secundaria);
     margin: 10px;
 }
 
-.item-external{
+.item-external {
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
 }
 
 .item-external i {
-   transition: transform 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
 }
 
 .item-external i:hover {
@@ -290,10 +318,12 @@ main {
 
 .copyright a {
     color: var(--terciaria);
+    text-decoration: none;
 }
 
 .copyright a:hover {
     color: var(--secundaria-clara);
+    text-decoration: underline;
 }
 
 .contacts i {
